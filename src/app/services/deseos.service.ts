@@ -1,5 +1,4 @@
 import { Injectable } from "@angular/core";
-import { join } from "path";
 import { Lista } from "../models/lista.model";
 
 @Injectable({
