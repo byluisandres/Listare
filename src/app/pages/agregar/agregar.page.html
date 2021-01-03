@@ -10,10 +10,7 @@
 <ion-content>
   <ion-list>
     <ion-item>
-      <ion-label position="floating">
-        Añadir Tarea
-      </ion-label>
-      <ion-input type="text" [(ngModel)]="nombreItem" (keyup.enter)="agregarItem()"></ion-input>
+      <ion-input type="text" [(ngModel)]="nombreItem" (keyup.enter)="agregarItem()" autofocus="true" placeholder="Añadir tarea"></ion-input>
     </ion-item>
   </ion-list>
   <!-- lista de tareas por hacer -->
@@ -24,7 +21,6 @@
         <ion-checkbox slot="start" color="tertiary" [(ngModel)]="item.completado" (ionChange)="cambioCheck(item)">
         </ion-checkbox>
         <ion-label>{{item.desc}}</ion-label>
-
       </ion-item>
       <ion-item-options side="end">
         <ion-item-option (click)="borrar(i)" color="danger">
