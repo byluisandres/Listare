@@ -10,3 +10,5 @@
 ![edit](https://user-images.githubusercontent.com/48489792/103485280-7dede100-4df5-11eb-9733-64d426e8db08.png)
 
 ### Instalación
+npm install
+ionic serve
